@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+/*common*/
+#ath-{
+    position: fixed;
+    bottom: 4px;
+    left: 12px;
+    color: white;
+    z-index: 99;
+}
+
+#ath- a{
+    color: #768595;
+    padding-top: 8px;
+}
+
+#social-button{
+    padding-top: 8px;
+}

@@ -1,0 +1,185 @@
+/*Front Page*/
+#page{
+    height: 100%;
+    width: 100%;
+}
+
+#bg{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page1{
+    min-height: 99%;
+    width: auto;
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#pg1div1{
+    background-color: #ffffff00;
+}
+
+#pg1div2{
+    background-color: #ffffff2a;
+    position: relative;
+}
+
+#pg1div3{
+    background-color: #ffffff3a;
+    position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 2px;
+  left: 22px;
+    color: antiquewhite;
+}
+
+.cube{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: antiquewhite;
+    animation: movesq 5s infinite;
+}
+.cube2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: antiquewhite;
+    animation: movesq 5s infinite;
+    animation-delay: .2s
+}
+@keyframes movesq{
+    0%{left: 10%}
+    25%{left: 90%;bottom: 10%}
+    50%{left: 90%;bottom: 80%}
+    75%{left: 10%;bottom: 80%}
+    100%{left: 10%;bottom: 10%}
+}
+
+.anticube{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 80%;
+    left: 90%;
+    background: antiquewhite;
+    animation: movesqr 5s infinite;
+}
+.anticube2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 80%;
+    left: 90%;
+    background: antiquewhite;
+    animation: movesqr 5s infinite;
+    animation-delay: .2s;
+}
+@keyframes movesqr{
+    0%{left: 90%;bottom: 80%}
+    25%{left: 10%;bottom: 80%}
+    50%{left: 10%;bottom: 10%}
+    75%{left: 90%;bottom: 10%}
+    100%{left: 90%;bottom: 80%}
+}
+
+
+
+/*About me page*/
+.infor{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.profile-img {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    border-radius: 10vw;
+    height: 20vw;
+    width: 20vw;
+    min-height: 174px;
+    min-width: 174px;
+    background-color: #ffffff5a;
+}
+
+.info-para{
+    transform: translateX(-50%);
+    position:absolute;
+    bottom: 0vw;
+    left: 50%;
+    width: fit-content;
+    border: 0px;
+    padding: 40px;
+    padding-bottom: 10vw;
+}
+
+#about{
+    text-align: justify;
+    color: white;
+/*    font-size: 2vw;*/
+    font-family: TimesNewRoman;
+}
+
+/*Projects page*/
+.projects{
+    box-sizing: border-box;
+}
+
+.column{
+    float: left;
+    margin: 20px auto;
+    width: 23%;
+    padding: 0 10px;
+}
+
+.row{
+    padding-top: 10%;
+    margin: 0 -5px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1010px){
+    .column{
+        width: 94%;
+        display: block;
+        margin-bottom: 5%;
+        float: center;
+    }
+}
+
+.cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff8a;
+}
+
+.cards > p{
+    margin: 8px;
+}
