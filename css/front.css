@@ -1,10 +1,11 @@
 /*Front Page*/
-#page{
+#page {
     height: 100%;
     width: 100%;
 }
 
-#bg{
+/*Static background*/
+#bg {
     position:fixed;
     top: 0px;
     left: 0px;
@@ -16,7 +17,7 @@
     background-size: cover;
 }
 
-.page1{
+.page1 {
     min-height: 99%;
     width: auto;
     max-width: 100%;
@@ -24,16 +25,16 @@
     border-radius: 20px;
 }
 
-#pg1div1{
+#pg1div1 {
     background-color: #ffffff00;
 }
 
-#pg1div2{
+#pg1div2 {
     background-color: #ffffff2a;
     position: relative;
 }
 
-#pg1div3{
+#pg1div3 {
     background-color: #ffffff3a;
     position: relative;
 }
@@ -45,7 +46,8 @@
     color: antiquewhite;
 }
 
-.cube{
+/*Animation cubes*/
+.cube {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -54,7 +56,7 @@
     background: antiquewhite;
     animation: movesq 5s infinite;
 }
-.cube2{
+.cube2 {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -64,7 +66,7 @@
     animation: movesq 5s infinite;
     animation-delay: .2s
 }
-@keyframes movesq{
+@keyframes movesq {
     0%{left: 10%}
     25%{left: 90%;bottom: 10%}
     50%{left: 90%;bottom: 80%}
@@ -72,7 +74,7 @@
     100%{left: 10%;bottom: 10%}
 }
 
-.anticube{
+.anticube {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -81,7 +83,7 @@
     background: antiquewhite;
     animation: movesqr 5s infinite;
 }
-.anticube2{
+.anticube2 {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -91,7 +93,7 @@
     animation: movesqr 5s infinite;
     animation-delay: .2s;
 }
-@keyframes movesqr{
+@keyframes movesqr {
     0%{left: 90%;bottom: 80%}
     25%{left: 10%;bottom: 80%}
     50%{left: 10%;bottom: 10%}
@@ -99,10 +101,8 @@
     100%{left: 90%;bottom: 80%}
 }
 
-
-
 /*About me page*/
-.infor{
+.infor {
     position: absolute;
     left: 10px;
     top: 5px;
@@ -123,7 +123,7 @@
     background-color: #ffffff5a;
 }
 
-.info-para{
+.info-para {
     transform: translateX(-50%);
     position:absolute;
     bottom: 0vw;
@@ -134,7 +134,7 @@
     padding-bottom: 10vw;
 }
 
-#about{
+#about {
     text-align: justify;
     color: white;
 /*    font-size: 2vw;*/
@@ -142,23 +142,23 @@
 }
 
 /*Projects page*/
-.projects{
+.projects {
     box-sizing: border-box;
 }
 
-.column{
+.column {
     float: left;
     margin: 20px auto;
     width: 23%;
     padding: 0 10px;
 }
 
-.row{
+.row {
     padding-top: 10%;
     margin: 0 -5px;
 }
 
-.row:after{
+.row:after {
     content: "";
     display: table;
     clear: both;
@@ -173,13 +173,13 @@
     }
 }
 
-.cards{
+.cards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
     background-color: #ffffff8a;
 }
 
-.cards > p{
+.cards > p {
     margin: 8px;
 }

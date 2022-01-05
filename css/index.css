@@ -1,10 +1,10 @@
-html, body{
+html, body {
     height: 100%;
     margin: 0;
 }
 
-/*common*/
-#ath-{
+/*common side soccial links*/
+#ath- {
     position: fixed;
     bottom: 4px;
     left: 12px;
@@ -12,11 +12,11 @@ html, body{
     z-index: 99;
 }
 
-#ath- a{
+#ath- a {
     color: #768595;
     padding-top: 6px;
 }
 
-#social-button{
+#social-button {
     padding-top: 6px;
 }
