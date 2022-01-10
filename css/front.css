@@ -46,6 +46,27 @@
     color: antiquewhite;
 }
 
+.ctri {
+    color: white;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 50%;
+    left: 50%;
+    border: 70px solid black;
+    border-top-color: #ffffff24;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: moveln 5s infinite;
+}
+@keyframes moveln {
+    0%{bottom: 0%}
+    50%{bottom: 30%;}
+    100%{bottom: 0%}
+}
+
 /*Animation cubes*/
 .cube {
     width: 20px;
