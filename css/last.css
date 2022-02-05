@@ -1,0 +1,18 @@
+/*Front Page*/
+#abt {
+    height: 100%;
+    width: 100%;
+}
+
+/*Static background*/
+#bg_abt {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../images/IMG20201206133941-03-01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

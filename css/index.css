@@ -4,6 +4,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+#abt {
+    display: none;
+}
+
 /*common side soccial links*/
 #ath- {
     position: fixed;
@@ -40,4 +44,16 @@ html, body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: grey; 
+}
+
+/*Change*/
+#change_page {
+    position: fixed;
+    z-index: 99;
+    bottom: 4px;
+    right: 12px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #768595;
 }
