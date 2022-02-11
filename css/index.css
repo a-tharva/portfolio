@@ -56,4 +56,15 @@ html, body {
     width: 20px;
     height: 20px;
     background-color: #768595;
+    animation: anim-glow 4s ease infinite;
+}
+
+@keyframes anim-glow{
+    0% {
+		box-shadow: 0 0 #7685954d;
+	}
+	50% {
+		box-shadow: 0 0 6px 4px white;
+		border-width: 2px;
+	}
 }
