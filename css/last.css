@@ -1,4 +1,4 @@
-/*Front Page*/
+/*last Page*/
 #abt {
     height: 100%;
     width: 100%;
@@ -15,4 +15,71 @@
     background: url('../images/IMG20201206133941-03-01.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#within {
+    width: 90%; 
+    height: 85%; 
+    border: none; 
+    border-radius: 20px; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%; 
+    top: 52%;
+    background-color: #ffffff2a;
+    border-color: transparent;
+    overflow: scroll;
+    
+    /*scrollbar*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+    /*vertical scroll snap*/
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+}
+
+/*scrollbar chrome*/
+#within::-webkit-scrollbar {
+    display: none;
+}
+
+#within > div {
+    scroll-snap-align: center;
+}
+
+.within {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#within_page1 {
+    background-color: transparent;
+}
+
+#within_page2 {
+    background: url(../images/within/rsz_dscn2059-01-02_2_blur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#within_page3 {
+    background: url(../images/within/Snap635093024-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#abt_inf {
+    text-align: center; 
+    font-family: serif;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 96%;
+    left: 50%;
+    font-size: 10px;
 }
