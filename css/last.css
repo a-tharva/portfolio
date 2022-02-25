@@ -17,6 +17,7 @@
     background-size: cover;
 }
 
+/*Main div*/
 #within {
     width: 90%; 
     height: 85%; 
@@ -82,4 +83,50 @@
     top: 96%;
     left: 50%;
     font-size: 10px;
+}
+
+/*div inside div*/
+
+#img {
+    width: 50%;
+    height: 95%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 26%;
+    
+    background: url(../images/within/rsz_dscn2059-01-02_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /*to make image sharp*/
+    image-rendering: -webkit-optimize-contrast;
+    
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#img:hover {
+    background: url(../images/within/DSCN2059-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pmain {
+    position: relative;
+    bottom: 82%;
+    left: 62%;
+    z-index: 1;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#psub {
+    position: relative;
+    bottom: 70%;
+    left: 60%;
+    z-index: 1;
+    font-size: 1.2vw;
+    color: white;
 }
