@@ -18,7 +18,7 @@ html, body {
 }
 
 #ath- a {
-    color: #768595;
+    color: #e5e4ffad;
     padding-top: 6px;
 }
 
@@ -55,7 +55,7 @@ html, body {
     border-radius: 10px;
     width: 20px;
     height: 20px;
-    background-color: #768595;
+    background-color: #91a6bd85;
     animation: anim-glow 4s ease infinite;
 }
 
