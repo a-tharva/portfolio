@@ -167,7 +167,7 @@
     width: fit-content;
     border: 0px;
     padding: 40px;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
 }
 
 #about {
@@ -175,6 +175,27 @@
     color: white;
 /*    font-size: 2vw;*/
     font-family: cambria;
+}
+
+.modules {
+    padding: 0;
+    margin-top: 0;
+}
+
+.modules > li {
+    display: inline-block;
+}
+
+li {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 505px){
+    
+    #about {
+        font-size: 3vw;
+    }
+    
 }
 
 /*Projects page*/
@@ -201,7 +222,7 @@
 }
 
 @media screen and (max-width: 1010px){
-    .column{
+    .column {
         width: 94%;
         display: block;
         margin-bottom: 5%;
