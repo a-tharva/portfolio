@@ -173,8 +173,8 @@
 #about {
     text-align: justify;
     color: white;
-/*    font-size: 2vw;*/
-    font-family: cambria;
+    font-size: 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .modules {
@@ -193,7 +193,7 @@ li {
 @media screen and (max-width: 505px){
     
     #about {
-        font-size: 3vw;
+        font-size: 1.6vh;
     }
     
 }
