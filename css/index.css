@@ -4,26 +4,112 @@ html, body {
     scroll-behavior: smooth;
 }
 
-#abt {
-    display: none;
+:root {
+  --text: #e5f6ed;
+  --background: #030805;
+  --primary: #93dab9;
+  --secondary: #2c6280;
+  --accent: #6595ca;
 }
 
-/*common side soccial links*/
-#ath- {
-    position: fixed;
-    bottom: 4px;
-    left: 12px;
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  height: 100vh;
+}
+
+html, body {
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  color: var(--text);
+  font-size: large;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  color: var(--accent);
+}
+
+.sidebar{
+  position: fixed;
+  top: 40%;
+  left: 20%;               /* slightly left of center */
+  transform: translateY(-50%);
+  display: grid;
+  gap: 20px;
+  align-content: start;
+  font-family: Kaisei Opti;
+}
+
+.sidebar a {
     color: white;
-    z-index: 99;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-#ath- a {
-    color: #e5e4ffad;
-    padding-top: 6px;
+.brand{
+  border-radius: 12px;
+  color: var(--text);
+  background: color-mix(in oklab, var(--text) 8%, transparent);
 }
 
-#social-button {
-    padding-top: 6px;
+.nav { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.nav a, .nav button{
+  font: inherit;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  padding: 6px 10px;
+  text-align: left;
+  opacity: .9;
+}
+.nav a:hover, .nav button:hover{ opacity: 1 }
+
+/* Content area */
+.content {
+  margin-left: 30%;
+  margin-right: 5%;
+  top: 20%;
+  position: absolute;
+  padding: 2rem;
+  background-color:rgb(110 96 96 / 10%);
+  border-radius: 16px;
+  min-height: 40%;
+  min-width: 50%;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.content h2 {
+  margin-top: 0;
+  color: var(--primary);
+  font-family: Kaisei Opti;
+  font-size: xx-large;
+}
+
+.content p {
+  line-height: 1.6;
 }
 
 /*Scrollbar*/
@@ -46,25 +132,80 @@ html, body {
     background: grey; 
 }
 
-/*Change*/
-#change_page {
-    position: fixed;
-    z-index: 99;
-    bottom: 4px;
-    right: 12px;
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: #91a6bd85;
-    animation: anim-glow 4s ease infinite;
+/* Projects Section */
+.projects-section {
+  display: flex;
+  gap: 2%;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes anim-glow{
-    0% {
-		box-shadow: 0 0 #7685954d;
-	}
-	50% {
-		box-shadow: 0 0 6px 4px white;
-		border-width: 2px;
-	}
+.projects-list {
+  flex: 1;
+  max-width: 30%;
+  overflow-y: auto;
+  padding-right: 1%;
+  border-right: 1px solid var(--secondary);
+}
+
+.projects-list h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.projects-list ul {
+  display: none;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.projects-list ul li {
+  margin: 0.3rem 0;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.projects-list ul li:hover {
+  color: var(--accent);
+}
+
+.projects-details {
+  flex: 2;
+  padding-left: 2%;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 12px;
+}
+
+.projects-details h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.projects-details a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+.projects-details a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px)   {
+    .sidebar{
+        display: flex;
+        top: 10%;
+        left: 10%;
+    }
+    .sidebar li {
+        display: inline;
+    }
+    .content {
+        margin-left: 5%;
+        max-height: 70%;
+        overflow-y: auto;
+    }
 }

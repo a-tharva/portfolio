@@ -7,155 +7,36 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/front.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Head: Inter via Google Fonts (quick start) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script defer src="js/index.js"></script>
 </head>
 
 <body>
-    
-    <!--Social links-->
-    <div id="ath-">
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+    <!-- <div class="logo">AB</div> -->
+     <a href="/" class="brand" aria-label="Atharva Bhandvalkar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="96.494140625px" height="69.296875px" viewBox="-20 -49.296875 96.494140625 69.296875">
+        <path d="M19.38 0L29.93 0Q29.93-1.07 29.15-1.22L29.15-1.22Q28.91-1.27 28.66-1.27L28.66-1.27L27.00-1.27L15.82-29.30L14.01-29.30L3.08-1.27L0-1.27L0 0L8.69 0Q8.69-1.07 7.91-1.22L7.91-1.22Q7.67-1.27 7.42-1.27L7.42-1.27L5.03-1.27L8.69-10.74L18.90-10.74L22.56-1.27L19.38-1.27L19.38 0ZM13.77-23.97L18.36-12.16L9.23-12.16L13.77-23.97ZM54.64-22.66L54.64-22.66Q54.64-26.37 51.12-28.17L51.12-28.17Q48.83-29.30 45.61-29.30L45.61-29.30L31.88-29.30L31.88-28.03L35.79-28.03L35.79-1.27L31.88-1.27L31.88 0L45.75 0Q52.05 0 54.98-4.00L54.98-4.00Q56.49-6.10 56.49-8.59L56.49-8.59Q56.49-12.50 53.03-14.65L53.03-14.65Q51.42-15.58 49.32-15.97L49.32-15.97Q52.83-17.29 54.15-20.41L54.15-20.41Q54.64-21.58 54.64-22.66ZM39.99-28.03L44.43-28.03Q49.46-28.03 50.15-23.58L50.15-23.58Q50.24-22.95 50.24-22.27L50.24-22.27Q50.24-19.09 47.75-17.48L47.75-17.48Q46.29-16.55 44.34-16.55L44.34-16.55L39.99-16.55L39.99-28.03ZM39.99-15.23L45.26-15.23Q49.71-15.23 51.22-11.47L51.22-11.47Q51.81-10.11 51.81-8.50L51.81-8.50Q51.81-4.74 49.37-2.64L49.37-2.64Q47.75-1.27 45.51-1.27L45.51-1.27L39.99-1.27L39.99-15.23Z" fill="currentColor"/>
+        </svg>
+    </a>
 
-        <div id="social-button"><a href="https://github.com/a-tharva" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" style="height: 16px;width: 16px;"></i></a></div>
-        
-        <div id="social-button"><a href="https://www.linkedin.com/in/atharva-bhandvalkar" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" style="height: 16px;width: 16px;"></i></a></div>
-        
-        <div id="social-button" style="font-size: 20px; padding-top: 2px;"><a href="https://github.com/a-tharva/portfolio" style="text-decoration: none;">©</a></div>
+    <ul>
+        <li data-section="home" class="active">home</li>
+        <li data-section="about">about</li>
+        <li data-section="projects">projects</li>
+        <li><a href="https://drive.google.com/file/d/1JMOx7BV0Pel5lZTG3Z1bG6DO8J4JiXjW/view?usp=drive_link" target="_blank">resume</a></li>
+        <li><a href="https://www.linkedin.com/in/atharva-bhandvalkar" target="_blank">linkedIn</a></li>
+    </ul>
+</nav>
 
-    </div>
-
-    
-    <!--Start page-->
-    <div id="page">
-        <!--Static Background-->
-        <div id="bg"></div>
-        <!-- <div class="blob-cont">
-            <div class="yellow blob"></div>
-            <div class="red blob"></div>
-            <div class="green blob"></div>
-        </div> -->
-        <!--1/3 main-->
-        <div class="page1" id="pg1div1">
-            <div class="top-left">
-                <h2 style="text-align: left;float:left">Portfolio |</h2>
-                <h6 style="text-align: left;float: right; margin-top: 23px;">code<br>and stuff</h6>
-            </div>
-            <div class="center-nav">
-                <a href="#pg1div2">About</a>
-                <a href="#pg1div3">Projects</a>
-                <a href="https://drive.google.com/file/d/1JMOx7BV0Pel5lZTG3Z1bG6DO8J4JiXjW/view?usp=drive_link" target="_blank">Resume</a>
-                <a href="https://www.linkedin.com/in/atharva-bhandvalkar" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-        <!--2/3 info-->
-        <div class="page1" id="pg1div2">
-            <div class="infor"><p>About me</p></div>
-            
-            <div class="info-para" id="about">
-                <p>
-                    I’m <strong>Atharva Bhandvalkar</strong>, a Senior DevOps Engineer passionate about building scalable, secure, and cost-efficient cloud solutions. 
-                    With over 3 years of experience across <strong>AWS, Azure, and GCP</strong>, I specialize in <strong>Infrastructure as Code</strong> (Terraform, CloudFormation), 
-                    <strong>CI/CD automation</strong> (Jenkins, Azure DevOps, GitHub Actions), and <strong>Kubernetes-based container orchestration</strong>.
-                </p>
-
-                <h3>Skills</h3>
-                <ul>
-                    <li>Cloud: AWS, Azure, GCP</li>
-                    <li>Infra as Code: Terraform, CloudFormation</li>
-                    <li>CI/CD: Jenkins, Azure DevOps, GitHub Actions</li>
-                    <li>Containers: Kubernetes, Docker</li>
-                    <li>Observability: Prometheus, Grafana, OpenTelemetry, Elasticsearch</li>
-                    <li>Networking & Security: Kong API Gateway, DevSecOps practices</li>
-                    <li>Programming: C#, Python, Golang, Rust</li>
-                </ul>
-
-                <h3>Interests</h3>
-                <p>
-                    I’m curious about <strong>Robotics, IoT, Cyber Security, Machine Learning, and Computer Vision</strong>, 
-                    and I enjoy exploring side projects that push the boundaries of technology.
-                </p>
-
-                <h3>Philosophy</h3>
-                <p>
-                    I believe <strong>automation, observability, and security</strong> form the backbone of modern software delivery — 
-                    empowering teams to move faster with confidence.
-                </p>
-            </div>
-            
-        </div>
-        <!--3/3 projects-->
-        <div class="page1" id="pg1div3">
-            <div class="infor"><p>&lt;Projects&gt;</p></div>
-            <div class="projects-section">
-                <!-- Left list -->
-                <div class="projects-list">
-                    <h3>PyPi</h3>
-                    <ul>
-                        <li data-project="pyfort">pyfort</li>
-                        <li data-project="launchenv">launchenv</li>
-                        <li data-project="typeprint">type</li>
-                    </ul>
-
-                    <h3>Games</h3>
-                    <ul>
-                        <li data-project="bugged-up">Bugged up</li>
-                        <li data-project="dimensional-jump">Dimensional jump</li>
-                        <li data-project="flappy-bird">Flappy Bird</li>
-                    </ul>
-
-                    <h3>Applications</h3>
-                    <ul>
-                        <li data-project="way-home">Way Home</li>
-                        <li data-project="calculator">Calculator</li>
-                        <li data-project="sha256">SHA256</li>
-                    </ul>
-
-                    <h3>ML/DA</h3>
-                    <ul>
-                        <li data-project="trends">Google Trends</li>
-                        <li data-project="digits">Handwritten Digits</li>
-                        <li data-project="happiness">Happiness Index</li>
-                    </ul>
-
-                    <h3>Bots</h3>
-                    <ul>
-                        <li data-project="reddit-bot">Reddit</li>
-                        <li data-project="discord-bot">Discord</li>
-                        <li data-project="telegram-bot">Telegram</li>
-                    </ul>
-
-                    <h3>Scripts</h3>
-                    <ul>
-                        <li data-project="algo-comparison">Algorithm Comparison</li>
-                        <li data-project="spotify">Spotify</li>
-                    </ul>
-
-                    <h3>Tools</h3>
-                    <ul>
-                        <li data-project="ip-master">IP Master</li>
-                        <li data-project="shedmessage">SHEDMessage</li>
-                        <li data-project="hkt">HKT (NL)</li>
-                    </ul>
-
-                    <h3>IoT</h3>
-                    <ul>
-                        <li data-project="adv-sensing">Advanced Sensing (NL)</li>
-                    </ul>
-
-                    <h3>Working On</h3>
-                    <ul>
-                        <li data-project="proximity">Proximity (NL)</li>
-                        <li data-project="super-script">Super Script (NL)</li>
-                        <li data-project="ocveditor">OCVEditor (NL)</li>
-                        <li data-project="health">Health (NL)</li>
-                    </ul>
-                </div>
-
-                <!-- Right details -->
-                <div class="projects-details" id="project-details">
-                    <p>Select a project to see details.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Main content -->
+    <main class="content" id="content">
+      <!-- Content dynamically inserted by JS -->
+    </main>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
