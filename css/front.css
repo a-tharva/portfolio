@@ -23,7 +23,7 @@
   color: var(--text);
 }
 
-#about h2 {
+/* #about h2 {
   font-size: 1.5rem;
   color: var(--primary);
   margin-bottom: 1.5rem;
@@ -39,4 +39,59 @@
   margin-top: 1.5rem;
   font-style: italic;
   color: var(--secondary);
+} */
+
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.personal-flair {
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.skills-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* .skills-contact .skills,
+.skills-contact .contact {
+  flex: 1 1 45%;
+} */
+
+.skills h3 {
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin: 0.4rem 0;
+}
+
+.skills ul li::before {
+  content: "– ";
+  color: var(--primary);
+}
+
+.content a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.belief {
+  margin-top: 2rem;
+  color: var(--accent);
+  font-style: italic;
 }

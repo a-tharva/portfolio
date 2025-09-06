@@ -1,46 +1,70 @@
 const projectsData = {
-  "PyPi": {
+    "Observability": {
+    "zenith": {
+        desc: "Centralized observability platform supporting real-time insights, anomaly detection, and root cause analysis across distributed systems",
+        link: ""
+    }
+    },
+    "Streaming": {
+    "connectx": {
+        desc: "Peer-to-peer file sharing and media streaming platform ensuring privacy and performance with Rust and Tauri.",
+        link: ""
+    }
+    },
+    "Networking": {
+    "ipman": {
+        desc: "Network diagnostic tool.",
+        link: ""
+    }
+    },
+    "Search Engine": {
+    "foogle": {
+        desc: "Local search engine which helps searching across files just like web.",
+        link: ""
+    }
+    },
+    "PyPi": {
     "pyfort": {
-      desc: "Python package for quick encryption utilities.",
-      link: "https://pypi.org/project/pyfort/"
+        desc: "Python package for quick encryption utilities.",
+        link: "https://pypi.org/project/pyfort/"
     },
     "launchenv": {
-      desc: "Automates Python environment setup.",
-      link: "https://pypi.org/project/launchenv/"
+        desc: "Automates Python environment setup.",
+        link: "https://pypi.org/project/launchenv/"
     },
     "typeprint": {
-      desc: "Styled terminal printing for Python.",
-      link: "https://pypi.org/project/typeprint/"
+        desc: "Styled terminal printing for Python.",
+        link: "https://pypi.org/project/typeprint/"
     }
-  },
-  "Games": {
+    },
+    "Games": {
     "Bugged up": {
-      desc: "A 2D puzzle game on Itch.io.",
-      link: "https://nusuta-studio.itch.io/bugged-up"
+        desc: "A 2D puzzle game on Itch.io.",
+        link: "https://nusuta-studio.itch.io/bugged-up"
     },
     "Dimensional jump": {
-      desc: "Platformer built with Pygame.",
-      link: "https://github.com/a-tharva/Dimentional-jump"
+        desc: "Platformer built with Pygame.",
+        link: "https://github.com/a-tharva/Dimentional-jump"
     },
     "Flappy Bird": {
-      desc: "Classic flappy bird clone.",
-      link: "https://github.com/a-tharva/flappy-bird"
+        desc: "Classic flappy bird clone.",
+        link: "https://github.com/a-tharva/flappy-bird"
     }
-  },
-  "Applications": {
+    },
+    "Applications": {
     "Way Home": {
-      desc: "Navigation-focused Android app.",
-      link: "https://github.com/a-tharva/Apps/tree/master/way%20home"
+        desc: "Navigation-focused Android app.",
+        link: "https://github.com/a-tharva/Apps/tree/master/way%20home"
     },
     "Calculator": {
-      desc: "Basic calculator in Java.",
-      link: "https://github.com/a-tharva/Apps/tree/master/calculator"
+        desc: "Basic calculator in Java.",
+        link: "https://github.com/a-tharva/Apps/tree/master/calculator"
     },
     "SHA256": {
-      desc: "Tool to compute SHA256 hashes.",
-      link: "https://github.com/a-tharva/Apps/tree/master/sha256"
+        desc: "Tool to compute SHA256 hashes.",
+        link: "https://github.com/a-tharva/Apps/tree/master/sha256"
     }
-  }
+    }
   // … extend with ML/DA, Bots, etc. same structure
 };
 
@@ -119,28 +143,51 @@ const sections = {
     <div id="about" class="content-box">
     <h2>About Me</h2>
     <p>
-        I’m <strong>Atharva Bhandvalkar</strong>, a Senior DevOps Engineer passionate
-        about building scalable, secure, and cost-efficient cloud solutions.
-        With 3+ years across AWS, Azure, and GCP, I specialize in
-        <em>Infrastructure as Code</em>,
-        <em>CI/CD automation</em>,
-        and <em>Container orchestration</em>.
+        Hi, I’m <strong>Atharva Bhandvalkar</strong>, a Senior DevOps Engineer passionate about
+        building scalable, secure, and cost-efficient cloud solutions across AWS, Azure, and GCP.
+        I focus on <em>Infrastructure as Code</em>, <em>CI/CD automation</em>, and
+        <em>container orchestration</em>.
+         
     </p>
 
-    <p>
-        Current as Senior DevOps Engineer, I lead and mentor teams in Agile environments,</br>
-        managing diverse cloud services while ensuring high availability and cost efficiency. </br>
-        Drawing from my software engineering background, I've architected cloud-agnostic systems, </br>
-        optimized infrastructures for 100+ microservices (reducing costs by 46% via rightsizing, spot instances, and autoscaling),</br>
-        and handled large-scale migrations—including terabyte ETL pipelines to AWS S3/Redshift with incremental loads and backups, multi-cloud networking for 200+ services with VPN/DMZ,
-        and MLOps platforms on Azure for ML model training/deployments with versioning and rollbacks.
+    <p class="personal-flair">
+        Beyond cloud engineering, I’m curious about Robotics, IoT, Cyber Security, Machine Learning,
+        and Computer Vision. I also enjoy exploring side projects that push the boundaries of
+        technology — and photography is one of my creative outlets.
     </p>
+
+    <div class="skills-contact">
+        <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>Cloud: AWS, Azure, GCP</li>
+            <li>Infra as Code: Terraform, CloudFormation</li>
+            <li>CI/CD: Jenkins, Azure DevOps, GitHub Actions</li>
+            <li>Containers: Kubernetes, Docker</li>
+            <li>Observability: Prometheus, Grafana, OpenTelemetry, Elasticsearch</li>
+            <li>Networking & Security: DevSecOps practices</li>
+            <li>Programming: C#, Python, Golang, Rust</li>
+        </ul>
+        </div>
+    </div>
 
     <p class="belief">
         I believe automation, observability, and security form the backbone of
         modern software delivery — and I love enabling teams to deliver faster
         with confidence.
     </p>
+
+    <div class="contact">
+        <p>
+            Interested in the full journey?  
+            <a href="https://drive.google.com/file/d/1JMOx7BV0Pel5lZTG3Z1bG6DO8J4JiXjW/view?usp=drive_link" target="_blank">View my Resume →</a>
+        </p>
+        <p>
+            Open to DevOps or SDE opportunities.  
+            Reach out at
+            <a href="mailto:atharv.bhandvalkar@gmail.com">atharv.bhandvalkar@gmail.com</a>.
+        </p>
+        </div>
     </div>
   `,
   projects: renderProjects
